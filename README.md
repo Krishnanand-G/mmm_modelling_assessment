@@ -31,13 +31,7 @@ Marketing Mix Modeling using XGBoost to predict revenue from marketing spend.
 - Google spend can be predicted from other channels
 - Total ROI is 5.71x
 
-## Environment Setup
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Installation
+## How to run
 
 1. **Clone the repository:**
 ```bash
@@ -45,35 +39,14 @@ git clone https://github.com/Krishnanand-G/mmm_modelling_assessment.git
 cd mmm_modelling_assessment
 ```
 
-2. **Create virtual environment (recommended):**
-```bash
-python -m venv mmm_env
-# Windows:
-mmm_env\Scripts\activate
-# macOS/Linux:
-source mmm_env/bin/activate
-```
-
-3. **Install required packages:**
+2. **Install prerequisites:**
 ```bash
 pip install pandas numpy matplotlib scikit-learn xgboost jupyter
 ```
 
-### Running the Model
-
-1. **Start Jupyter Notebook:**
+3. **Run the notebook:**
 ```bash
-jupyter notebook
-```
-
-2. **Open and run the model:**
-   - Open `mmm_model.ipynb`
-   - Run all cells (Cell → Run All)
-   - Results will be saved to `mmmdataset_predicted.csv`
-
-### Alternative: Run without Jupyter
-```bash
-python -c "import jupyter; jupyter nbconvert --to python mmm_model.ipynb; python mmm_model.py"
+jupyter notebook mmm_model.ipynb
 ```
 
 ## Data
